@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Home page</title>
+
+</head>
+
+<body>
+
+    <p id="insert_text">Hello</p>
+
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1"></label>
+            <input type="enter_text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Write text">
+
+        </div>
+
+        <button type="submit" class="btn btn-primary" onClick="process()">Send</button>
+    </form>
+
+    
+    <script type="text/javascript">
+        function process() {
+            //                    var textVar = document.getElementById("exampleInputEmail1").value
+            //
+            //                    var element = document.querySelector('.insert_text');
+            //                    element.innerHTML = textVar;
+
+            var text = document.getElementsByTagName("input")[0];
+            var val = text.value;
+            document.getElementById("insert_text").innerHTML = val
+
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>home page</title>
+    <style>
+        body {
+            font: 20px 'Verdana';
+
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 8px;
+            padding: 0;
+            overflow: auto;
+            position: relative;
+            z-index: 99999999;
+            background: url(13180087-grass-texture-salut-res-frais-de-fond-de-terrain-herbe-coup%C3%A9e-gros-plan-.jpg);
+        }
+
+        ul {
+            display: block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: fixed;
+            z-index: 100;
+
+        }
+
+        ul:after {
+            display: block;
+            content: ' ';
+            clear: both;
+            float: none;
+
+
+
+
+
+        }
+
+        ul.menu>li {
+
+            float: left;
+            background-color: grey;
+
+
+        }
+
+        ul.menu>li>a {
+            display: block;
+            padding-left: 50px;
+            padding-top: 10px;
+            padding-right: 50px;
+            padding-bottom: 10px;
+            color: white;
+            text-decoration: none;
+            transition: background-color 1s linear;
+
+
+
+
+        }
+
+        ul.menu>li>a:hover {
+            background-color: black;
+            width: 130px;
+        }
+
+        ul.submenu {
+            display: none;
+            position: inherit;
+            width: 228px;
+            top: 37px;
+            left: 0;
+            background-color: white;
+            border: 1px solid red;
+
+        }
+
+        ul.submenu>li {
+            display: block;
+
+        }
+
+        ul.submenu>li>a {
+            display: block;
+            padding: 10px;
+            color: white;
+            background-color: darkgrey;
+            text-decoration: none;
+        }
+
+        ul.submenu>li>a:hover {
+            text-decoration: underline;
+        }
+
+        ul.menu>li:hover>ul.submenu {
+            display: block;
+        }
+
+        .active {
+            background-color: green
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .squareBlack {
+            opacity: 0.85;
+            background: black;
+            outline: 2px solid #000;
+            border: 2px solid black;
+            margin: 10px;
+
+        }
+
+        .squareWhite {
+            opacity: 0.85;
+            background: White;
+            outline: 2px solid #000;
+            border: 2px solid black;
+            margin: 10px
+        }
+
+        .dws-wrapper {
+            position: absolute;
+            left: 90%;
+        }
+
+        .boxImg {
+            width: 40px;
+            height: 55px;
+            float: right;
+            margin: 0 10px;
+
+
+        }
+
+        .boxText {
+       
+            width: 100%;
+            float: left;
+            margin: 0 10px;
+        }
+
+        .boxText h1 {
+
+          
+            -webkit-animation: pulsing 2s;
+            animation: pulsing 2s;
+        }
+
+        .boxImg img {
+
+            width: 40px;
+            height: 55px;
+            -webkit-animation: pulsing 2s;
+            animation: pulsing 2s;
+        }
+
+
+        @-webkit-keyframes pulsing {
+            0% {
+                -webkit-transform: scale(0.5, 0.5);
+                transform: scale(0.5, 0.5)
+            }
+
+            100% {
+                -webkit-transform: scale(1.0, 1.0);
+                transform: scale(1.0, 1.0);
+            }
+
+
+        }
+
+        @keyframes pulsing {
+            0% {
+                -webkit-transform: scale(0.5, 0.5);
+                transform: scale(0.5, 0.5)
+            }
+
+            100% {
+                -webkit-transform: scale(1.0, 1.0);
+                transform: scale(1.0, 1.0);
+            }
+
+
+        }
+
+        table {
+            width: 100%;
+            background: darkgray;
+            color: white;
+            border-spacing: 0px;
+            position: absolute;
+        }
+
+        td,
+        th {
+            background: gray;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li><a class="active" href="file:///Users/tarasbeshlei/Documents/GitHub/RealProgect/Main/index.html">Main</a>
+        </li>
+        <li><a href=#>Matches</a>
+            <ul class="submenu">
+                <li><a href=#>Claendar of matches</a></li>
+                <li><a href=#>Next Game</a></li>
+                <li><a href=#>Rating</a></li>
+            </ul>
+        </li>
+        <li><a href=#>News</a>
+        </li>
+        <li><a href=#>Fans</a>
+        </li>
+        <li><a href=#>Contacts</a>
+        </li>
+        <li><a href=#>Admin</a>
+        </li>
+    </ul>
+
+
+
+    <div class="dws_wrapper">
+        <div class="boxImg">
+            <img src="1200px-Real_Madrid_CF.png">
+        </div>
+    </div>
+
+    <div class="dws_wrapper">
+        <div class="boxText">
+            
+                <div class="squareBlack">
+                    <div class="center" style="font-size: 1em; color:white">
+                        <h1>Last News</h1>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+    <div style="position: absolute; top: 23%; left: 0%">
+        <img src="_HE27135.jpg" width="300px" height="200px">
+        
+        <table border="1">
+            <tr>
+                <th>The academy side got the better of Unionistas de Salamanca thanks to a Cristo double and another effort from Vinicius Jr.</th>
+            </tr>
+            <tr>
+                <td>Real Madrid Castilla continued their fine start to the season against Unionistas de Salamanca. The academy side, who are still unbeaten so far, looked formidable once again at the Alfredo Di Stéfano. They ran out convincing winners with a disciplined and yet exciting performance on match day four. A Cristo double and another goal for Vnicius Jr. sealed victory for the madridistas.
+
+                    Santiago Solari's men used the space superbly throughout against what was daring opposition. The direct nature of the Whites' play caused real problems, creating chances galore, and the attack-minded approach didn't take long to reap its reward: with just 7 minutes on the clock, López linked up with Cristo in the area and the Canary Islands-born ace wriggled away from two defenders and shot past Carlos Molina.
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <div style="position: absolute; top: 23%; left: 25%">
+        <img src="_5AM1405_horizontalThumb.jpg" width="300px" height="200px">
+        <table border="2" style="">
+            <tr>
+                <th>The kings of Europe are back in action</th>
+            </tr>
+            <tr>
+                <td>The Champions League is back at the Santiago Bernabéu. Real Madrid, winners for the last three consecutive campaigns, will start out on the defence of their title this Wednesday (9:00pm). The Whites kick off the competition with a huge clash with Roma, last season's semi-finalists. CSKA Moscow and Viktoria Plzen will be their other opposition in the Group Stage.
+
+                    After clinching La Decimotercera in Kiev last time out, Real Madrid became the first team in history to win three Champions League titles in a row. Now, their objective will once again be reaching the final, set to take place on the 1st of June 2019 at the Wanda Metropolitano, and further add to their legendary status in Europe.
+
+                    Impressive Champions League starts
+                    Real Madrid have begun their last eleven Champions League campaigns with a win. Since beating Werder Bremen 2-1 back in 2007/08, the Whites have gone on to win every one of their inaugural ties in the competition; eight at the Bernabéu and three away from home. Last season saw them beat APOEL 3-0.
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <div style="position: absolute; top: 23%; left: 50%">
+        <img src="benzema_codere_webThumb.jpg" width="300px" height="200px">
+        <table border="2" style="">
+            <tr>
+                <th>“The first home game in the Champions League is very important. We have to have the ball and control the pace of the game”, said the forward.</th>
+            </tr>
+            <tr>
+                <td>KKarim Benzema gave an interview to Codere, Real Madrid´s official betting company, in which he spoke about the start of the season and the upcoming Champions League opener: "This competition is on another level. Every match is important, none are easy, and that’s one of the things that I like. Real Madrid are the best club in the world. Every year you have to be successful. I hope we’re lucky like last season in this Champions League because it’s very important to us".
+
+                    "We know there are a lot of strong teams, but if I have to say who I think are one of the favourites, it's always going to be Real Madrid, at this club the goal is always to try to win everything and play well, we have to give up a lot in order to be focused on winning".</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+    <div style="position: absolute; top: 23%; left: 75%">
+        <img src="_3AM8545.jpg" width="300px" height="200px">
+        <table border="2" style="">
+            <tr>
+                <th>Isco, the fifth madridista goal scorer this season</th>
+            </tr>
+            <tr>
+                <td>Real Madrid added another goal scorer to their list at the start of this new season on their visit to San Mamés. Isco scored the equalising goal for the madridistas, heading home a Bale cross. With the Malaga-born star joining the list, five different players have now got their names on the scoresheet so far this campaign, sharing between them the 13 goals scored by Lopetegui's Real Madrid.
+
+                    Benzema is the team's leading scorer with five. He netted the first of the season in the European Super Cup, and has enjoyed a stellar start to LaLiga, where he has smashed two braces (against Girona and Leganés). Following the Frenchman are Bale and Ramos, each with three. Carvajal, completes the list, having scored the first madridista goal in this LaLiga campaign against Getafe.</td>
+            </tr>
+
+        </table>
+
+    </div>
+</div>
+
+
+
+
+
+</body>
+
+</html>
