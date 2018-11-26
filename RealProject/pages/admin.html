@@ -50,8 +50,9 @@
 
 
 <body>
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#"><img src="1200px-Real_Madrid_CF.png" widht="40px" height="40px"></a>
+        <a class="navbar-brand" href="#"><img src="../images/1200px-Real_Madrid_CF.png" widht="40px" height="40px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,7 +60,7 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="">Main <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../index.html">Main <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Matches</a>
@@ -70,60 +71,85 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="file:///Users/tarasbeshlei/Documents/GitHub/RealProgect/News_Bootstrap/index.html#">News</a>
+                    <a class="nav-link" href="news.html">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link enable" href="file:///Users/tarasbeshlei/Documents/GitHub/RealProgect/Fans_bootstrap/index.html">Fans</a>
+                    <a class="nav-link enable" href="fans.html">Fans</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link enable" href="file:///Users/tarasbeshlei/Documents/GitHub/RealProgect/Contacts_Bootstrap/index.html">Contacts</a>
+                    <a class="nav-link enable" href="contacts.html">Contacts</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link enable" href="file:///Users/tarasbeshlei/Documents/GitHub/RealProgect/Admin_bootstrap/index.html">Admin</a>
+                    <a class="nav-link enable" href="admin.html">Admin</a>
                 </li>
 
             </ul>
 
         </div>
     </nav>
+
+
     <main role="main" class="container">
 
-        <div style="text-align: center">
-            <h1>Calendar</h1>
-        </div>
 
-        <table class="table table-sm table-dark">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Date</th>
-                    <th scope="col">Location</th>
-                    <th scope="col">Oponent</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                    
-                    
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                    <td>Cell</td>
-                </tr>
-            </tbody>
-        </table>
+
+        <img src="../images/empty-image.png" style="width: 400px; height: 250px">
+        <button type="button" class="btn btn-primary" style="margin-top: 210px; margin-left: 70px; width: 200px">Add Image</button>
+
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1"></label>
+                <input class="form-control" aria-describedby="Help" placeholder="News Title" id="TitleEnter">
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1"></label>
+                <input class="form-control" aria-describedby="Help" placeholder="News text" id="description">
+            </div>
+
+            <button type="button" class="btn btn-primary" style="width: 200px" onClick="processing()">Add News</button>
+        </form>
+
+        <script type="text/javascript">
+            function processing() {
+                var text1 = document.getElementById('TitleEnter')[0];
+//                var text2 = document.getElementById('description')[0];
+                var val = text1.value;
+//                var val2 = text2.value;
+                alert(val);
+//                if (val != "") {
+////                    resetError(text1.parentNode);
+////                    resetError(text2.parentNode);
+//                    alert(val);
+////                    document.getElementById("textInput").value = "";
+//                    document.getElementById("TitleEnter").value = "";
+//
+//
+//                } else {
+//                    showError(text1.parentNode, "Задайте опис");
+////                    showError(text2.parentNode, "Задайте опис");
+//                }
+//
+//            }
+
+//            function showError(container, errorMessage) {
+//                container.className = 'error';
+//                var msgElem = document.createElement('span');
+//                msgElem.className = "error-message";
+//                msgElem.innerHTML = errorMessage;
+//                container.appendChild(msgElem);
+//            }
+//
+//            function resetError(container) {
+//                container.className = '';
+//                if (container.lastChild.className == "error-message") {
+//                    container.removeChild(container.lastChild);
+//                }
+//            }
+
+        </script>
+
+
     </main><!-- /.container -->
 
 
